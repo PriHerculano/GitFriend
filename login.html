@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jennifer Tondade">
+    <meta name="author" content="Lucas Kato">
+    <meta name="author" content="Priscila Herculano">
+    <link rel="stylesheet" href="/css/login.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="shortcut icon" href="img/logo-gato.png" type="image/x-icon">
+    <title>Login</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg mb-5" style="background-color: #F1F1F1;">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="/img/slogan-gato-horizontal.png" alt="50" width="auto" height="70"
+                    class="d-inline-block align-text-top">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" style="color: #7B7066;" aria-current="page" href="/homepage.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" style="color: #7B7066;" href="/login.html">Entrar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" style="color: #7B7066;" aria-current="page" href="/contato.html">Contato</a>
+                    </li>
+                    <li class="nav-item dropdown" style="color: #7B7066;">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            ONGs
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">AMPARA Animal</a></li>
+                            <li><a class="dropdown-item" href="#"> ONG Cão Sem Dono</a></li>
+                            <li><a class="dropdown-item" href="#"> União de Proteção Animal em Salvador</a></li>
+                            <li><a class="dropdown-item" href="#"> ProAnima – Associação Protetora dos Animais</a></li>
+                            <li><a class="dropdown-item" href="#"> Associação Protetora e Amiga dos Animais</a></li>
+                            <li><a class="dropdown-item" href="#"> ONG Cão Sem Fome </a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Ver mais...</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-custon" style="background-color: #EF8E7D; border-color: #F0C0A8; color: #F1F1F1;" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container login-container">
+        <h1>Login</h1>
+        <form action="processar_login.php" method="post">
+            <div>
+            <label class="w-100" for="usuario">Nome de Usuário ou Email:</label>
+            <input class="w-100" type="text" id="usuario" name="usuario" required>
+            </div>
+
+            <div>
+            <label class="w-100" for="senha">Senha:</label>
+            <input class="w-100" type="password" id="senha" name="senha" required>
+            </div>
+
+            <input type="submit" value="Entrar">
+        </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+</body>
+</html>
