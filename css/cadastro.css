@@ -1,0 +1,49 @@
+/* #F1F1F1 (off white) - #F0C0A8 (Salmão claro) - #EF8E7D (Salmão) #7B7066 (marrom)*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('../img/fundoCadastro.png');
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+h1 {
+    color: #EF8E7D;
+    text-align: center;
+}
+
+.login-container {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px  #7B7066;
+    color:  #7B7066;
+}
+
+input[type="text"], input[type="password"] {
+    width: 95%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    color:#7B7066;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #EF8E7D;
+    color:  #F1F1F1;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
